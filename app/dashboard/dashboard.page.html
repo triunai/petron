@@ -1,0 +1,281 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Faiba Petro Sdn. Bhd.,</ion-title>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" ios="notifications-outline" md="notifications-sharp"></ion-icon>
+        <ion-badge class="count" color="danger">5</ion-badge>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" ios="person-outline" md="person-sharp"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" ios="log-out-outline" md="log-out-sharp"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-row>
+          <ion-col>
+            <img src="./assets/avatar.jpg" style="width: 30px; height: 30px; border-radius: 50%;" alt="Logo" />
+          </ion-col>
+          <ion-col class="ion-text-left no-transform">
+            Welcome, CCPM User!<br />
+            Fouder
+          </ion-col>
+        </ion-row>
+
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button>
+        <div class="submission-left">
+          <div class="submission-left-days">15 Days left</div>
+          <div class="submission-left-label">for submission</div>
+        </div>
+        <!--<ion-badge class="days-left">5</ion-badge>-->
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Vehicle Fuel Entry Information</ion-title>
+  </ion-toolbar>
+  <ion-row>
+    <ion-col size="12" sizeSm="12" sizeMd="7" sizeLg="8" sizeXl="8" class="ion-no-padding">
+      <ion-card>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8" sizeSm="8" sizeMd="8" sizeLg="10" sizeXl="10"
+              class="ion-no-padding ion-align-self-center ion-justify-content-center">
+              <ion-list>
+                <ion-item>
+                  <ion-label position="stacked">Enter / Scan Card Number</ion-label>
+                  <ion-input [clearInput]="true" placeholder="84562174"></ion-input>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+            <ion-col size="4" sizeSm="4" sizeMd="4" sizeLg="2" sizeXl="2"
+              class="ion-no-padding ion-align-self-center ion-justify-content-center">
+              <ion-button color="success">Search</ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12" sizeSm="12" sizeMd="6" sizeLg="4" sizeXl="4" class="ion-no-padding">
+              <div class="summary-card">
+                <ion-card-title>Faiba Petro Sdn</ion-card-title>
+                <ion-row class="ion-justify-content-start ion-align-items-start">
+                  <ion-col class="ion-no-padding">Reg No.: 123456</ion-col>
+                </ion-row>
+                <ion-row class="ion-justify-content-start ion-align-items-start">
+                  <ion-col class="ion-no-padding">KWSP No/SOCSO No.: 567896</ion-col>
+                </ion-row>
+                <ion-row class="ion-justify-content-start ion-align-items-start">
+                  <ion-col class="ion-no-padding">Ph.No.: +60 1234 345989</ion-col>
+                </ion-row>
+                <ion-row class="ion-justify-content-start ion-align-items-start">
+                  <ion-col class="ion-no-padding">Fax No.: 23459899</ion-col>
+                </ion-row>
+                <ion-row class="ion-justify-content-start ion-align-items-start">
+                  <ion-col class="ion-no-padding">Email: xxxxx@gmail.com</ion-col>
+                </ion-row>
+              </div>
+            </ion-col>
+            <ion-col size="12" sizeSm="12" sizeMd="6" sizeLg="4" sizeXl="4" class="ion-no-padding">
+              <div class="summary-card">
+                <ion-row class="ion-justify-content-start ion-align-items-start">
+                  <ion-col class="ion-no-padding">Vehicle Registration No.:123456</ion-col>
+                </ion-row>
+                <ion-row class="ion-justify-content-start ion-align-items-start">
+                  <ion-col class="ion-no-padding">Vehicle Type: sample</ion-col>
+                </ion-row>
+                <ion-row class="ion-justify-content-start ion-align-items-start">
+                  <ion-col class="ion-no-padding">Vehicle Brand: Brand</ion-col>
+                </ion-row>
+                <ion-row class="ion-justify-content-start ion-align-items-start">
+                  <ion-col class="ion-no-padding">Vehicle Model:sample model</ion-col>
+                </ion-row>
+              </div>
+            </ion-col>
+            <ion-col size="12" sizeSm="12" sizeMd="6" sizeLg="4" sizeXl="4" class="ion-no-padding">
+              <div class="summary-card">
+                <ion-card-title>Available Balance: RM2000.00</ion-card-title>
+              </div>
+            </ion-col>
+          </ion-row>
+          <br />
+          <ion-row class="ion-align-self-center ion-justify-content-center">
+            <ion-col size="12" sizeSm="12" sizeMd="6" sizeLg="4" sizeXl="4" class="ion-no-padding">
+              <div class="petrol-type diesel">Diesel</div>
+            </ion-col>
+            <ion-col size="12" sizeSm="12" sizeMd="6" sizeLg="4" sizeXl="4" class="ion-no-padding">
+              <div class="petrol-type petro-95">Petro 95</div>
+            </ion-col>
+            <ion-col size="12" sizeSm="12" sizeMd="6" sizeLg="4" sizeXl="4" class="ion-no-padding">
+              <div class="petrol-type petro-97">Petro 97</div>
+            </ion-col>
+          </ion-row>
+          <br />
+          <ion-row class="ion-align-items-center ion-justify-content-start margin-5">
+            <ion-col size="12" sizeSm="12" sizeMd="3" sizeLg="3" sizeXl="2" class="ion-text-left">
+              <ion-text color="dark">Reference No.</ion-text>
+            </ion-col>
+            <ion-col size="12" sizeSm="12" sizeMd="7" sizeLg="7" sizeXl="8" class="ion-no-padding">
+              <ion-item>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-align-items-center ion-justify-content-start margin-5">
+            <ion-col size="12" sizeSm="12" sizeMd="3" sizeLg="3" sizeXl="2" class="ion-text-left">
+              <ion-text color="dark">Staff Name</ion-text>
+            </ion-col>
+            <ion-col size="12" sizeSm="12" sizeMd="7" sizeLg="7" sizeXl="8" class="ion-no-padding">
+              <ion-item>
+                <ion-select placeholder="Select Staff">
+                  <ion-select-option value="11">CHAN BEAK LING</ion-select-option>
+                  <ion-select-option value="12">AZUAN BIN DAHLAN</ion-select-option>
+                  <ion-select-option value="13">IZHAM BIN ISMAIL</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-align-items-center ion-justify-content-start margin-5">
+            <ion-col size="12" sizeSm="12" sizeMd="3" sizeLg="3" sizeXl="2" class="ion-text-left">
+              <ion-text color="dark">Enter Amount (RM)</ion-text>
+            </ion-col>
+            <ion-col size="12" sizeSm="12" sizeMd="7" sizeLg="7" sizeXl="8" class="ion-no-padding">
+              <ion-item>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-align-items-center ion-justify-content-start margin-5">
+            <ion-col size="12" class="ion-text-right">
+              <ion-button color="success">Submit</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="12" sizeSm="12" sizeMd="5" sizeLg="4" sizeXl="4" class="ion-no-padding">
+      <ion-card>
+        <ion-card-content>
+          <ion-card-title>Transaction Receipt</ion-card-title>
+          <ion-row class="ion-justify-content-start ion-align-items-start">
+            <ion-col size="5">Transaction No.</ion-col>
+            <ion-col size="1">:</ion-col>
+            <ion-col size="6">FP00343456</ion-col>
+          </ion-row>
+          <ion-row class="ion-justify-content-start ion-align-items-start">
+            <ion-col size="5">Transaction Date</ion-col>
+            <ion-col size="1">:</ion-col>
+            <ion-col size="6">07/01/2023 15:04:03</ion-col>
+          </ion-row>
+          <ion-row class="ion-justify-content-start ion-align-items-start">
+            <ion-col size="5">Card No.</ion-col>
+            <ion-col size="1">:</ion-col>
+            <ion-col size="6">848933484395</ion-col>
+          </ion-row>
+          <ion-row class="ion-justify-content-start ion-align-items-start">
+            <ion-col size="5">Company</ion-col>
+            <ion-col size="1">:</ion-col>
+            <ion-col size="6">ABC INC SDN BHD 56, Jalan ANG SENg Brickfields 50470 KL</ion-col>
+          </ion-row>
+          <ion-row class="ion-justify-content-start ion-align-items-start">
+            <ion-col size="5">Fuel Type</ion-col>
+            <ion-col size="1">:</ion-col>
+            <ion-col size="6">Diesel 3.0 9.7 ltr</ion-col>
+          </ion-row>
+          <ion-row class="ion-justify-content-start ion-align-items-start">
+            <ion-col size="5">Fuel Amount (RM)</ion-col>
+            <ion-col size="1">:</ion-col>
+            <ion-col size="6">RM 300.00</ion-col>
+          </ion-row>
+          <ion-row class="ion-justify-content-start ion-align-items-start">
+            <ion-col size="5">Previous Balance (RM)</ion-col>
+            <ion-col size="1">:</ion-col>
+            <ion-col size="6">RM 1500.00</ion-col>
+          </ion-row>
+          <ion-row class="ion-justify-content-start ion-align-items-start">
+            <ion-col size="5">Current Balance (RM)</ion-col>
+            <ion-col size="1">:</ion-col>
+            <ion-col size="6">RM 1200.00</ion-col>
+          </ion-row>
+          <br />
+          <br />
+          <br />
+          <ion-item-divider></ion-item-divider>
+          <ion-row>
+            <ion-col class="ion-text-right ion-no-padding">
+              <ion-button color="success" class="no-transform">Download Receipt <ion-icon slot="end"
+                  ios="arrow-down-outline" md="arrow-down-sharp"></ion-icon></ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="ion-padding" style="overflow-x: auto;">
+      <table class="ion-table">
+        <thead>
+          <tr>
+            <th>Transaction No.</th>
+            <th>Transaction Date/Time</th>
+            <th>Card Number</th>
+            <th>Company Name</th>
+            <th>Vehicle No.</th>
+            <th>Vehicle Type</th>
+            <th>Fuel Type</th>
+            <th>Fuel Qty</th>
+            <th>Value(RM)</th>
+            <th>Staff Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>123</td>
+            <td>01/12/2022 3pm</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>Diesel</td>
+            <td>&nbsp;</td>
+            <td>13,226.80</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>456</td>
+            <td>01/01/2023 6pm</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>Petrol 95</td>
+            <td>&nbsp;</td>
+            <td>13,226.80</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>789</td>
+            <td>05/12/2021 7am</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>Petrol 97</td>
+            <td>&nbsp;</td>
+            <td>13,226.80</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </ion-col>
+  </ion-row>
+</ion-content>

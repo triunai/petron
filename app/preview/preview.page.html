@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Preview</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" shape="round" (click)="closeDialog();">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="ion-text-center">
+    <img [src]="path" alt="preview" />
+  </ion-card>
+</ion-content>

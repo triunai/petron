@@ -1,0 +1,42 @@
+<ion-content class="login-bg">
+  <ion-row class="full-height ion-justify-content-center ion-align-items-center">
+    <ion-col class="ion-text-center" size-xl="6" size-lg="6" size-md="6" size-sm="12" size-xs="12">
+      <ion-card class="ion-no-margin">
+        <ion-card-header>
+          <ion-card-title>Login</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size-xl="4" size-lg="4" size-md="4" size-sm="12" size-xs="12">
+              <ion-img src="./assets/faiba-logo.png" alt="Petron"></ion-img>
+            </ion-col>
+            <ion-col>
+              <form [formGroup]="dataForm" autocomplete="off" (ngSubmit)="loginUser()">
+                <ion-item>
+                  <ion-label position="floating">Email ID</ion-label>
+                  <ion-input type="email" clear-input="true" name="username" formControlName="UserName"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Password</ion-label>
+                  <ion-input type="password" clear-input="true" name="password" formControlName="Password"></ion-input>
+                </ion-item>
+                <ion-row>
+                  <ion-col class="ion-text-left">
+                    <ion-button type="button" color="danger" fill="clear" (click)="forgotPassword();">Forgot Password?
+                    </ion-button>
+                  </ion-col>
+                  <ion-col class="ion-text-right">
+                    <ion-button type="submit" color="success" [disabled]="isLoading == true || !dataForm.valid">
+                      <span *ngIf="!isLoading">Login</span>
+                      <ion-spinner *ngIf="isLoading"></ion-spinner>
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+              </form>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

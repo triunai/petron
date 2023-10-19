@@ -1,0 +1,147 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.count {
+    font-size: 9px;
+    border-radius: 50%;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    line-height: 10px;
+}
+
+.no-transform {
+    text-transform: none;
+}
+
+.submission-left {
+    border: 1px solid #ed1c24;
+
+}
+
+.submission-left-days {
+    background-color: #ed1c24;
+    color: #ffffff;
+}
+
+.submission-left-label {
+    color: #ed1c24;
+}
+
+.submission-left-days,
+.submission-left-label {
+    font-size: 10px;
+    text-transform: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.days-left {
+    font-size: 9px;
+    border-radius: 50%;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    line-height: 10px;
+    background-color: #00a0df;
+}
+
+.summary-card,
+.petrol-type {
+    background-color: #d3edf263;
+    border: 1px solid #0dcaf0;
+    padding: 25px;
+    margin: 5px;
+}
+
+.summary-card {
+    min-height: 181px;
+}
+
+.diesel {
+    background-color: #808080 !important;
+}
+
+.petro-95 {
+    background-color: #46bb23 !important;
+}
+
+.petro-97 {
+    background-color: #ffd800 !important;
+}
+
+.petrol-type {
+    color: #000000;
+    text-align: center;
+}
+
+.margin-5 {
+    margin: 5px;
+}
+
+.ion-table {
+    width: 100%;
+}
+
+.ion-table>tbody>tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.ion-table>tbody>tr:nth-of-type(odd) {
+    background-color: #ececec;
+}
+
+.ion-table>thead>tr>th {
+    text-align: left;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+.ion-table>thead>tr>th,
+.ion-table>tbody>tr>td {
+    padding: 5px;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.quartar-width {
+    width: 25%;
+}
